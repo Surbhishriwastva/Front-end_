@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a, b, c;
+        function caladd(firstnumber, secondnumber) {
+            a = parseInt(firstnumber);
+            b = parseInt(secondnumber);
+            c = a + b;
+            alert("RESULT=" + c);
+        }
+        function calsub(firstnumber, secondnumber) {
+            a = parseInt(firstnumber);
+            b = parseInt(secondnumber);
+            c = a - b;
+            alert("RESULT=" + c);
+        }
+        function calmulti(firstnumber, secondnumber) {
+            a = parseInt(firstnumber);
+            b = parseInt(secondnumber);
+            c = a * b;
+            alert("RESULT=" + c);
+        }
+        function caldiv(firstnumber, secondnumber) {
+            a = parseInt(firstnumber);
+            b = parseInt(secondnumber);
+            c = a / b;
+            alert("RESULT=" + c);
+        }
+
+
+    </script>
+
+    <h2 BASIC CALCULATOR></h2>
+
+    <table>
+        <tr>
+            <td> First number</td>
+            <td> <input id="txt1stno" type="text" />
+        </tr>
+        </td>
+        <tr>
+            <td> Second number</td>
+            <td> <input id="txt2ndno" type="text"></td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="ADD" onclick="caladd(txt1stno.value,txt2ndno.value)">
+                <input type="button" value="SUB" onclick="calsub(txt1stno.value,txt2ndno.value)">
+            </td>
+            <td> <input type="button" value="multi" onclick="calmulti(txt1stno.value,txt2ndno.value)">
+                <input type="button" value="div" onclick="caldiv(txt1stno.value,txt2ndno.value)">
+                <input id="btnreset" type="reset" />
+
+            </td>
+
+            </td>
+        </tr>
+</body>
+</table>
+
+
+
+</body>
+
+</html>

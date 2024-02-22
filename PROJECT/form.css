@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: gray;
+    border: 5px solid red;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    letter-spacing: 1px;
+    margin: 20px;
+}
+
+#name {
+    font-size: large;
+    border: 2px solid green;
+    padding: 6px 10px;
+}
+
+#fname,
+#dob,
+#idno,
+#select {
+    font-size: large;
+    border: 2px solid green;
+    padding: 6px 10px;
+    margin: 0px;
+}
+
+
+
+h1 {
+    color: brown;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+h3 {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#batch {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#reset {
+    font-size: large;
+    color: green;
+    font-weight: bold;
+    background-color: gray;
+    border: 3px solid red;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+#submit:hover {
+
+    border: 2px solid red;
+    color: black;
+
+    cursor: pointer;
+}
+
+#reset:hover {
+
+    color: black;
+    cursor: pointer;
+}
+
+#submit {
+    font-size: large;
+    color: green;
+    font-weight: bold;
+    background-color: gray;
+    border: 3px solid red;
+    padding: 5px;
+}

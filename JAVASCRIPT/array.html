@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+    <h1 id="demo4"></h1>
+    <h1 id="demo5"></h1>
+    <h1 id="demo6"></h1>
+    <h1 id="demo7"></h1>
+    <h1 id="demo8"></h1>
+
+
+    <script>
+        //creating array method1
+        let array = [1, 2, 3, 4, 5];
+        console.log(array)
+        let programming = ["java", "c", "c++"]
+        console.log(programming)
+
+        //mehod2
+        const students = new Array("surbhi", "mala", 4, 'love')
+        console.log(students);
+        console.log(students[1]) //accessing the value
+        students[3] = "bubul"  //update elements of array
+        console.log(students);
+
+        let software = ['vlc', "instra", "fb"]
+        document.getElementById("demo").innerHTML = software;
+
+        //Array are special kind of objects.
+        //because of ṭhis ,you can store differnt types of values id
+        const employess = { firstname: "suresh", lastname: "singh", age: 29, salary: 40000 }
+        // document.getElementById("demo").innerHTML = employess.firstname
+        //document.getElementById("demo").innerHTML = employess.age
+
+        //array length
+        var sports = ['cricket', 'basketball', 'ludo', 'chess'];
+        let len = sports.length
+        console.log(len);
+
+        //acessing all elements
+        let hobbies = ['music', 'singing', 'dancing', 'swimming', 'reading']
+        let lenght = hobbies.length
+        console.log(lenght)
+        for (i = 0; i < lenght; i++)
+            console.log(hobbies[i]);
+
+        //***********************array method*******************************
+        //1 converting the array in string
+        let stud = ['ram', 'khushii', 'kajal', 'subo']
+        let ar1 = stud.toString();
+        console.log(ar1)
+
+        //2converting array to string (join())
+        let stud2 = ['ram', 'khushii', 'kajal', 'subo']
+        let ar2 = stud2.join(" *");
+        console.log(ar2)
+
+        //3 pop() method used to remove the last element
+        let stud3 = ['ram', 'khushii', 'kajal', 'subo']
+        document.getElementById("demo1").innerHTML = stud3;
+        stud3.pop();
+        document.getElementById("demo1").innerHTML = stud3;
+
+        //4.push used to add last elements
+        let stud4 = ['riya', 'khushiiyaa', 'kajali', 'subra']
+        stud4.push("surbhi");
+        document.getElementById("demo2").innerHTML = stud4;
+
+        //5 shift used to shift elements and also remove first element
+        let stud5 = ['ram', 'khushii', 'kajal', 'abhishek', 'bulbul']
+        stud5.shift();
+        document.getElementById('demo3').innerHTML = stud5;
+
+        // 6unshift used to add elementin first element
+        code = ['vc', 'bc', 'mc']
+        code.unshift("ac", 'cd');
+        document.getElementById("demo4").innerHTML = code;
+
+        //7concat method to used to add two string 
+        ae1 = [1, 2, 3, 4];
+        ar2 = [5, 6, 7, 8];
+        ar3 = ae1.concat(ar2)
+        ar4 = ['surbhi', 'ram', 'sita']
+        ar5 = ar3.concat(ar4);
+        document.getElementById("demo5").innerHTML = ar3
+        document.getElementById("demo6").innerHTML = ar5
+
+
+
+    </script>
+
+</body>
+
+</html>

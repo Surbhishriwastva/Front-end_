@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic caluclator</title>
+</head>
+
+<body>
+    <script>
+        function add() {
+            var num1 = parseInt(document.getElementById("value1").value);
+            var num2 = parseInt(document.getElementById("value2").value);
+            var ans = document.getElementById("value3");
+            ans.value = num1 + num2;
+        }
+
+
+    </script>
+    <form>
+        Enter first Number : <input type="text" id='value1' /> <br><br>
+        Enter second number:<input type="text " id="value2" /> <br> <br>
+        <input type="button" name="sumbit" onclick="add()" value="SUM">
+        <input id="btnreset" type="reset" /><br> <br>
+
+        Answer:<input type="text" id="value3" name="value3" />
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #clock {
+            background-color: grey;
+            width: 300px;
+            border: 5px solid rgb(red, green, blue);
+            padding: 15px;
+            margin: 15px;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <center>
+        <div id="clock" onload="CurrentTime()"></div>
+    </center>
+    <script>
+        function CurrentTime() {
+            let date = new Date();
+            let hour = date.getHours();
+            let min = date.getMinutes();
+            let sec = date.getsecond();
+            let session = "AM";
+
+            if (hour > 12) {
+                session = "PM";
+            }
+            hour = (hour < 10) ? "0" + hour : hour;
+            min = (min < 10) ? "0" + min : min;
+            sec = (sec < 10) ? "0" + sec : sec;
+
+            let time = hour + ":" + min + ":" + sec + " " + session;
+
+            document.getElementById("clock").innerText = time;
+
+            let t = SetTimeout(function () { CurrentTime() }, 1000);
+        }
+        CurrentTime();
+
+
+        //(let a = new Date();
+        //console.log(a);)
+
+
+    </script>
+
+</body>
+
+</html>

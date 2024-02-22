@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let mystring = 'wlecome to javascript';
+        console.log(mystring);
+
+        //string method
+        console.log(mystring.length);
+        console.log(mystring.indexOf("to"));
+        console.log(mystring.search("j"));
+        console.log(mystring.slice(10, 21))
+        console.log(mystring.charAt(3))
+
+        //the replace method replaceonly the first match
+        console.log(mystring.replace("o", "p"))
+        console.log(mystring.replace("javascript", "programming"))
+        console.log(mystring.toUpperCase());
+        console.log(mystring.toLowerCase());
+
+        //joins two string
+        let s1 = "abhi";
+        let s2 = "suru";
+        let text3 = s1.concat(s2) //if we dont uesd space it give nospace
+        let text4 = s1.concat(" ", s2);
+        console.log(text4);
+        console.log(text3);
+
+        //Templates literals
+        let a = 10;
+        let b = 5;
+        let total = `total sum is:${a + b}`;
+        let t2 = `subtraction is :${a - b}`;
+        console.log(total)
+        console.log(t2)
+    </script>
+
+</body>
+
+</html>
